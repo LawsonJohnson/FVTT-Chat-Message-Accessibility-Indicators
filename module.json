@@ -1,28 +1,40 @@
 {
-  "name": "chat-indicators",
+  "id": "chat-indicators",
   "title": "Chat Message Accessibility Indicators",
   "description": "Adds a textual tag to chat messages to easily identify whether the message is a whisper, blind roll, or self roll. Additionally, makes it easier to identify the participants in a whisper.",
-  "version": "1.1.0",
-  "author": "Cole Schultz (cole#9640) and Lawson Johnson",
-  "languages": [
-      {
-          "lang": "en",
-          "name": "English",
-          "path": "lang/en.json"
-      }
+  "version": "#{VERSION}#",
+  "library": "false",
+  "manifestPlusVersion": "1.2.0",
+  "compatibility": {
+    "minimum": 10,
+    "verified": 10.291
+  },
+  "authors": [
+    {
+      "name": "Cole Schultz",
+      "discord": "cole#9640"
+    },
+    {
+      "name": "Lawson Johnson",
+      "url": "https://github.com/LawsonJohnson"
+    }
   ],
   "esmodules": [
-    "chat-indicators.js"
+    "scripts/chat-indicators.js"
   ],
   "styles": [
-    "chat-indicators.css"
+    "styles/chat-indicators.css"
   ],
-  "minimumCoreVersion": 10,
-  "compatibleCoreVersion": "10.291",
-	"url": "https://github.com/LawsonJohnson/FVTT-Chat-Message-Accessibility-Indicators",
-	"manifest": "https://raw.githubusercontent.com/LawsonJohnson/FVTT-Chat-Message-Accessibility-Indicators/master/module.json",
-	"download": "https://github.com/LawsonJohnson/FVTT-Chat-Message-Accessibility-Indicators/archive/1.1.0.zip",
-	"license": "https://github.com/LawsonJohnson/FVTT-Chat-Message-Accessibility-Indicators/blob/1.1.0/LICENSE",
-	"readme": "https://github.com/LawsonJohnson/FVTT-Chat-Message-Accessibility-Indicators/blob/1.1.0/README.md",
-	"changelog": "https://github.com/LawsonJohnson/FVTT-Chat-Message-Accessibility-Indicators/blob/1.1.0/CHANGELOG.md"
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "url": "#{URL}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#",
+  "license": "LICENSE",
+  "readme": "README.md"
 }
