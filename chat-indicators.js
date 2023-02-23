@@ -14,7 +14,7 @@ function injectMessageTag(html, messageData) {
     const isBlind = messageData.message.blind || false;
     const isWhisper = whisperTargets?.length > 0 || false;
     const isSelf = isWhisper && whisperTargets.length === 1 && whisperTargets[0] === messageData.message.user;
-    const isRoll = messageData.message.roll !== undefined;
+    const isRoll = messageData.message.rolls !== undefined;
 
     // Inject tag to the left of the timestamp
     if (isBlind) {
@@ -37,10 +37,10 @@ function injectWhisperParticipants(html, messageData) {
     const whisperTargetString = messageData.whisperTo;
     const whisperTargetIds = messageData.message.whisper;
     const isWhisper = whisperTargetIds?.length > 0 || false;
-    const isRoll = messageData.message.roll !== undefined;
+    const isRoll = messageData.message.rolls !== undefined;
 
     const authorId = messageData.message.user;
-    const userId = game.user.data._id;
+    const userId = game.user._id;
 
     if (!isWhisper) return;
     if (userId !== authorId && !whisperTargetIds.includes(userId) ) return;
