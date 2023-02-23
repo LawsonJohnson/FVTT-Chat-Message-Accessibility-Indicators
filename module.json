@@ -20,10 +20,10 @@
     }
   ],
   "esmodules": [
-    "scripts/chat-indicators.js"
+    "chat-indicators.js"
   ],
   "styles": [
-    "styles/chat-indicators.css"
+    "chat-indicators.css"
   ],
   "languages": [
     {
